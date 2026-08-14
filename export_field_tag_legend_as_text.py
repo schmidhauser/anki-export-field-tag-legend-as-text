@@ -197,8 +197,8 @@ def apply_shortcuts(config: dict) -> None:
     )
 
 
-copy_action = QAction("Copy Field & Tag Legend as Text", mw)
-save_action = QAction("Save Field & Tag Legend as Text…", mw)
+copy_action = QAction("Copy Field && Tag Legend as Text", mw)
+save_action = QAction("Save Field && Tag Legend as Text…", mw)
 
 qconnect(copy_action.triggered, on_copy)
 qconnect(save_action.triggered, on_save)

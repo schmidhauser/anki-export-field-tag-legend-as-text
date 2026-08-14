@@ -6,6 +6,10 @@ Ideally this documentation should reside within the collection itself rather tha
 
 **Export Field & Tag Legend as Text** is designed to complement **[Selected Notes to Structured Text](https://github.com/schmidhauser/anki-selected-notes-to-structured-text)** and **[Export Tags as Text](https://github.com/schmidhauser/anki-export-tags-as-text)**. The first exports selected notes, the second exports the collection-wide tag inventory, and this add-on exports the conventions that explain the fields and tags.
 
+## Installation
+
+Install **Export Field & Tag Legend as Text** from [AnkiWeb](https://ankiweb.net/shared/info/1931887561) using add-on code `1931887561`.
+
 ## Usage
 
 <img src="export_field_tag_legend_as_text-1.png" alt="Tools menu with Field & Tag Legend commands" align="right" width="232">
@@ -77,7 +81,8 @@ The exported text is the contents of the matching HTML comment. The `<!--` and `
 
 For example, the template comment:
 
-<!--html
+---html
+<!--
 
 # FIELD & TAG LEGEND
 
@@ -90,6 +95,7 @@ For example, the template comment:
 `#df` — Definition
 
 -->
+---
 
 is exported as:
 

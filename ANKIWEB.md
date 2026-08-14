@@ -19,17 +19,15 @@ Both commands export the same legend: **Copy Field & Tag Legend as Text** places
 
 The legend location, marker, and keyboard shortcuts can be changed under **Tools → Add-ons → Export Field and Tag Legend as Text → Config**. The default configuration is:
 
-```json
-{
-    "location": {
-        "card_type": "Card 1",
-        "note_type": "Basic"
-    },
-    "marker": "# FIELD & TAG LEGEND",
-    "shortcut_copy": "",
-    "shortcut_save": "Meta+Ctrl+Shift+L"
-}
-```
+    {
+        "location": {
+            "card_type": "Card 1",
+            "note_type": "Basic"
+        },
+        "marker": "# FIELD & TAG LEGEND",
+        "shortcut_copy": "",
+        "shortcut_save": "Meta+Ctrl+Shift+L"
+    }
 
 ### Location
 
@@ -47,21 +45,17 @@ The legend must be stored in an HTML comment containing the configured marker:
     
     -->
 
-The marker must occur exactly once in the configured front template. The comment delimiters `<!--` and `-->` and any leading or trailing whitespace are not included in the exported text.
-
-If the configured note type or card type cannot be found, the marker is missing or occurs more than once, or the marker is not inside a complete HTML comment, the add-on reports the problem and exports nothing.
+The marker must occur exactly once in the configured front template. The comment delimiters `<!--` and `-->` and any leading or trailing whitespace are not included in the exported text. If the configured note type or card type cannot be found, the marker is missing or occurs more than once, or the marker is not inside a complete HTML comment, the add-on reports the problem and exports nothing.
 
 The add-on only reads the template; it does not modify the template or any other part of the collection.
 
-<img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-2.png" alt="Field & Tag Legend stored in a card template" width="800">
+<p>
+    <img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-2.png" alt="Field & Tag Legend stored in a card template" width="800">
+</p>
 
 ### Shortcuts
 
-`shortcut_save` sets the shortcut for **Save Field & Tag Legend as Text…** The default shortcut is `Meta+Ctrl+Shift+L` (`⌃⇧⌘L`); set it to `""` to disable it.
-
-`shortcut_copy` sets the shortcut for **Copy Field & Tag Legend as Text**. It is disabled by default.
-
-No restart is required.
+`shortcut_save` sets the shortcut for **Save Field & Tag Legend as Text…** The default shortcut is `Meta+Ctrl+Shift+L` (`⌃⇧⌘L`); set it to `""` to disable it. `shortcut_copy` sets the shortcut for **Copy Field & Tag Legend as Text**. It is disabled by default. No restart is required.
 
 ## Format
 
@@ -94,7 +88,7 @@ is exported as:
     ## Tag Legend
     
     `#df` — Definition
-
+     
 
 ## Compatibility
 

@@ -34,3 +34,4 @@ The add-on only reads the template; it does not modify the template or any other
 
 No restart is required.
 
+On macOS, Qt interprets `Meta` as Control (`⌃`), `Ctrl` as Command (`⌘`), `Alt` as Option (`⌥`), and `Shift` as Shift (`⇧`).
