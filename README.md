@@ -81,7 +81,7 @@ The exported text is the contents of the matching HTML comment. The `<!--` and `
 
 For example, the template comment:
 
----html
+```html
 <!--
 
 # FIELD & TAG LEGEND
@@ -95,7 +95,7 @@ For example, the template comment:
 `#df` — Definition
 
 -->
----
+```
 
 is exported as:
 
