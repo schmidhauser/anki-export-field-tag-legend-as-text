@@ -139,7 +139,7 @@ def on_copy() -> None:
     clipboard.setText(text)
 
     tooltip(
-        "Copied Field & Tag Legend",
+        "Copied Field and Tag Legend",
         parent=mw,
     )
 
@@ -157,7 +157,7 @@ def on_save() -> None:
 
     filename, _selected_filter = QFileDialog.getSaveFileName(
         mw,
-        "Save Field & Tag Legend as Text",
+        "Save Field and Tag Legend as Text",
         str(default_path),
         "Text Files (*.txt)",
     )
@@ -180,7 +180,7 @@ def on_save() -> None:
         return
 
     tooltip(
-        "Saved Field & Tag Legend",
+        "Saved Field and Tag Legend",
         parent=mw,
     )
 
@@ -197,8 +197,8 @@ def apply_shortcuts(config: dict) -> None:
     )
 
 
-copy_action = QAction("Copy Field && Tag Legend as Text", mw)
-save_action = QAction("Save Field && Tag Legend as Text…", mw)
+copy_action = QAction("Copy Field and Tag Legend as Text", mw)
+save_action = QAction("Save Field and Tag Legend as Text…", mw)
 
 qconnect(copy_action.triggered, on_copy)
 qconnect(save_action.triggered, on_save)

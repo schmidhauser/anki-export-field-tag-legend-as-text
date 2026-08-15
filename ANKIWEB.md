@@ -2,18 +2,18 @@ Larger or more specialized Anki collections often rely on custom fields to organ
 
 Ideally this documentation should reside within the collection itself rather than in an external file. One simple way to achieve this is to store a field and tag legend as an HTML comment in a card template: the text remains hidden during review but is easy to inspect or edit and stays with the collection. This add-on exports the complete legend as plain text with a single command, either to the clipboard or to a file.
 
-**Export Field & Tag Legend as Text** is designed to complement **[Selected Notes to Structured Text](https://ankiweb.net/shared/info/1694585841)** and **[Export Tags as Text](https://ankiweb.net/shared/info/550673409)**. The first exports selected notes, the second exports the collection-wide tag inventory, and this add-on exports the conventions that explain the fields and tags.
+**Export Field and Tag Legend as Text** is designed to complement **[Selected Notes to Structured Text](https://ankiweb.net/shared/info/1694585841)** and **[Export Tags as Text](https://ankiweb.net/shared/info/550673409)**. The first exports selected notes, the second exports the collection-wide tag inventory, and this add-on exports the conventions that explain the fields and tags.
 
-<img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-1.png" alt="Tools menu with Field & Tag Legend commands" align="right" width="232">
+<img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-1.png" alt="Tools menu with Field and Tag Legend commands" align="right" width="232">
 
 ## Usage
 
 Choose either of the following menu items:
 
-* **Tools → Copy Field & Tag Legend as Text**
-* **Tools → Save Field & Tag Legend as Text…**
+* **Tools → Copy Field and Tag Legend as Text**
+* **Tools → Save Field and Tag Legend as Text…**
 
-Both commands export the same legend: **Copy Field & Tag Legend as Text** places it on the clipboard; **Save Field & Tag Legend as Text…** writes it to a UTF-8 text file, by default named `anki-field-tag-legend-YYYY-MM-DD.txt`.
+Both commands export the same legend: **Copy Field and Tag Legend as Text** places it on the clipboard; **Save Field and Tag Legend as Text…** writes it to a UTF-8 text file, by default named `anki-field-tag-legend-YYYY-MM-DD.txt`.
 
 ## Configuration
 
@@ -24,7 +24,7 @@ The legend location, marker, and keyboard shortcuts can be changed under **Tools
             "card_type": "Card 1",
             "note_type": "Basic"
         },
-        "marker": "# FIELD & TAG LEGEND",
+        "marker": "# FIELD AND TAG LEGEND",
         "shortcut_copy": "",
         "shortcut_save": "Meta+Ctrl+Shift+L"
     }
@@ -39,7 +39,7 @@ The legend must be stored in an HTML comment containing the configured marker:
 
     <!--
     
-    # FIELD & TAG LEGEND
+    # FIELD AND TAG LEGEND
     
     [Legend goes here.]
     
@@ -50,12 +50,12 @@ The marker must occur exactly once in the configured front template. The comment
 The add-on only reads the template; it does not modify the template or any other part of the collection.
 
 <p>
-    <img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-2.png" alt="Field & Tag Legend stored in a card template" width="800">
+    <img src="https://raw.githubusercontent.com/schmidhauser/anki-export-field-tag-legend-as-text/refs/heads/main/export_field_tag_legend_as_text-2.png" alt="Field and Tag Legend stored in a card template" width="800">
 </p>
 
 ### Shortcuts
 
-`shortcut_save` sets the shortcut for **Save Field & Tag Legend as Text…** The default shortcut is `Meta+Ctrl+Shift+L` (`⌃⇧⌘L`); set it to `""` to disable it. `shortcut_copy` sets the shortcut for **Copy Field & Tag Legend as Text**. It is disabled by default. No restart is required.
+`shortcut_save` sets the shortcut for **Save Field and Tag Legend as Text…** The default shortcut is `Meta+Ctrl+Shift+L` (`⌃⇧⌘L`); set it to `""` to disable it. `shortcut_copy` sets the shortcut for **Copy Field and Tag Legend as Text**. It is disabled by default. No restart is required.
 
 ## Format
 
@@ -65,7 +65,7 @@ For example, the template comment:
 
     <!--
     
-    # FIELD & TAG LEGEND
+    # FIELD AND TAG LEGEND
     
     ## Field Legend
     
@@ -79,7 +79,7 @@ For example, the template comment:
 
 is exported as:
 
-    # FIELD & TAG LEGEND
+    # FIELD AND TAG LEGEND
     
     ## Field Legend
     
